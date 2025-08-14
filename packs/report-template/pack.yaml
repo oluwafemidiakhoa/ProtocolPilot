@@ -1,0 +1,15 @@
+﻿id: report-template
+title: "qPCR Results Report Template + QC Checklist (RUO)"
+version: "1.0.0"
+
+# All paths are relative to packs/report-template/
+source_dir: .
+include:
+  - qpcr_report_template.md
+  - README.md
+  - RUO_NOTICE.txt
+  - LICENSE.txt
+  - checklists/qc_checklist.md
+  - examples/qpcr_report_example.md
+
+output: "dist/packs/report-template-v{{version}}.zip"

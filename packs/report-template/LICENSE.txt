@@ -1,0 +1,4 @@
+﻿Copyright (c) 2025 ProtocolPilot.
+
+License: Single-lab RUO seat. You may adapt internally for your lab.
+Redistribution or resale of the files is not permitted. Contact for multi-seat/site licenses.
