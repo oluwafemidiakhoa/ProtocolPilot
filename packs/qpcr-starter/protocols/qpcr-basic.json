@@ -1,0 +1,32 @@
+{
+  "id": "qpcr-basic",
+  "title": "qPCR (SYBR Green) — RUO",
+  "platforms": ["ABI 7500", "Bio-Rad CFX96"],
+  "materials": [
+    {"name":"SYBR Green qPCR Master Mix", "ref":"mastermix"},
+    {"name":"Forward primer (10 µM)", "ref":"primer_f"},
+    {"name":"Reverse primer (10 µM)", "ref":"primer_r"},
+    {"name":"Nuclease-free water", "ref":"water"},
+    {"name":"Template DNA", "ref":"template"},
+    {"name":"96-well qPCR plate", "ref":"plate"},
+    {"name":"Optical seal", "ref":"seal"}
+  ],
+  "parameters": {
+    "reaction_volume_ul": 20,
+    "anneal_temp_c": 60,
+    "cycles": 40
+  },
+  "steps": [
+    {"action":"prepare_mastermix","volume_ul":18,"notes":"Keep on ice"},
+    {"action":"dispense","target":"plate","volume_ul":18},
+    {"action":"add_template","volume_ul":2},
+    {"action":"seal_and_spin"},
+    {"action":"cycle","profile":[{"95C":120},{"95C":15,"60C":60}],"cycles":40,"acquire_on":"60C"},
+    {"action":"melt_curve"}
+  ],
+  "qc_rules":[
+    {"rule":"Ct_high","when":"Ct>35","message":"Low template or inhibition"},
+    {"rule":"NTC_contamination","when":"NTC_Ct<38","message":"Possible contamination"}
+  ],
+  "safety":["RUO only; not for diagnostic use"]
+}

@@ -1,0 +1,8 @@
+category,item,vendor,sku,qty,unit,notes
+Reagent,SYBR Green qPCR Master Mix,ThermoFisher,4309155,1,kit,2× master mix; alternatives OK
+Reagent,Forward primer (10 µM),IDT,,1,tube,sequence user-supplied
+Reagent,Reverse primer (10 µM),IDT,,1,tube,sequence user-supplied
+Consumable,96-well qPCR plate,Bio-Rad,HSP9601,1,pack,low-profile; white wells preferred
+Consumable,Optical seals,Bio-Rad,MSB1001,1,pack,clear adhesive seals
+Reagent,Nuclease-free water,ThermoFisher,AM9937,1,bottle,molecular biology grade
+Instrument,qPCR instrument,Bio-Rad/ABI,,1,unit,CFX96 or ABI 7500

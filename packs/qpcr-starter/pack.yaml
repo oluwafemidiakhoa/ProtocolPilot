@@ -1,0 +1,25 @@
+﻿id: qpcr-starter
+version: 1.0.0
+title: "ProtocolPilot — qPCR Starter Pack (RUO)"
+description: >
+  Ready-to-run qPCR (SYBR Green) protocol + BOM + tuned prompts.
+  Research Use Only. Not for diagnostic or clinical use.
+
+license: RUO
+files:
+  # If your file is named qPCR.md, keep it. If it's just "qPCR", rename to qPCR.md.
+  - path: qPCR.md
+    as: protocols/qPCR.md
+
+  - path: labels.json
+    as: bom/labels.json
+
+  - path: prompts/planner_system.txt
+    as: prompts/planner_system.txt
+
+  - path: prompts/reviewer_system.txt
+    as: prompts/reviewer_system.txt
+
+  # If your file is "ruodisclaimer.txt", keep this; adjust if your name differs.
+  - path: ruodisclaimer.txt
+    as: RUO_LICENSE.txt
