@@ -1,0 +1,16 @@
+{
+  "open-swe": {
+    "color": "0E8A16",
+    "description": "Plan \u2192 human approval \u2192 execute"
+  },
+  "open-swe-auto": {
+    "color": "1F77B4",
+    "description": "Auto-execute when safe"
+  },
+  "protocols": {
+    "color": "5319E7"
+  },
+  "ruo": {
+    "color": "B60205"
+  }
+}

@@ -1,0 +1,24 @@
+name: "ProtocolPilot task"
+description: "Convert a paper/preprint into a runnable RUO protocol"
+title: "[Protocol] <paper title or DOI>"
+labels: ["open-swe", "protocols", "ruo"]
+body:
+  - type: textarea
+    id: source
+    attributes:
+      label: Sources
+      description: "Links to PDFs/DOIs"
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope & constraints
+      description: "Organism, assay, throughput, equipment limits"
+  - type: textarea
+    id: accept
+    attributes:
+      label: Acceptance criteria
+      value: |
+        - Protocol .md with numbered steps, timings, temps, safety notes
+        - BOM with vendor-agnostic + 2 alternatives
+        - CI job passes tests/test_schema.py
+        - RUO disclaimer included
