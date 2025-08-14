@@ -18,8 +18,12 @@ dependencies = [
   "pre-commit>=3.7",
 ]
 
-[tool.setuptools.package-dir]
-"" = "src"
+# Tell setuptools that code lives in ./src and to find packages there
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
 
 [tool.pytest.ini_options]
 addopts = "-q"
