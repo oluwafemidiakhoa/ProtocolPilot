@@ -1,22 +1,15 @@
 name: release
-
 on:
   push:
-    tags:
-      - 'v*'          # any tag starting with v (v0.1.5, v1, etc.)
+    tags: ['v*']
   workflow_dispatch:
-
-permissions:
-  contents: write     # allow creating Releases
-
+permissions: { contents: write }
 jobs:
   build-and-release:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-      # Build a clean zip straight from HEAD (excludes .git automatically)
+        with: { fetch-depth: 0 }
       - name: Build zip
         run: git archive --format=zip -o protocolpilot_mvp.zip HEAD
       - name: Publish GitHub Release
