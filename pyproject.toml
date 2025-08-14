@@ -18,7 +18,6 @@ dependencies = [
   "pre-commit>=3.7",
 ]
 
-# Tell setuptools that code lives in ./src and to find packages there
 [tool.setuptools]
 package-dir = {"" = "src"}
 
