@@ -1,0 +1,6 @@
+pydantic>=2.7
+markdown-it-py>=3.0
+jsonschema>=4.22
+click>=8.1
+python-slugify>=8.0
+pre-commit>=3.7
