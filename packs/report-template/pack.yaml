@@ -1,15 +1,17 @@
 ﻿id: report-template
 title: "qPCR Results Report Template + QC Checklist (RUO)"
-version: "1.0.0"
+version: "1.0.1"      # bump for the new DOCX files
 
-# All paths are relative to packs/report-template/
+# paths are relative to packs/report-template/
 source_dir: .
 include:
   - qpcr_report_template.md
+  - qpcr_report_template.docx
   - README.md
   - RUO_NOTICE.txt
   - LICENSE.txt
   - checklists/qc_checklist.md
+  - checklists/qc_checklist.docx
   - examples/qpcr_report_example.md
 
-output: "dist/packs/report-template-v{{version}}.zip"
+output: "dist/packs/report-template-v1.0.1.zip"
