@@ -1,6 +1,6 @@
 ﻿id: report-template
 title: "qPCR Results Report Template + QC Checklist (RUO)"
-version: "1.0.1"      # bump for the new DOCX files
+version: "1.0.1"
 
 # paths are relative to packs/report-template/
 source_dir: .
